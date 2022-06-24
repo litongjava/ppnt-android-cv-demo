@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="选择图片:" />
+
+    <me.iwf.photopicker.widget.MultiPickResultView
+      android:id="@+id/viewSelectPhoto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+      android:id="@+id/btnSaveImage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="保存图片" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+      android:id="@+id/btnRecogTrafictLight"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="识别交通灯" />
+
+    <Button
+      android:id="@+id/btnRecogShape"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="识别图形" />
+
+    <Button
+      android:id="@+id/btnRecogPlate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="识别车牌" />
+  </LinearLayout>
+
+  <TextView
+    android:text="识别结果"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/recogResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
